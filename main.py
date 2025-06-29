@@ -11,16 +11,16 @@ from chat_agent import chat_with_user
 from fastapi.middleware.cors import CORSMiddleware
 
 
-from llm import generate_llm_response  # We'll build this next
+from llm import generate_llm_response  
 
 app = FastAPI()
 model = joblib.load(r"C:\Users\const\OneDrive\Documents\Sample\Git\Loan_Advisor\model build\loan_lender_model.pkl")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # or ["*"] for dev
+    allow_origins=["http://localhost:5173"],  
     allow_credentials=True,
-    allow_methods=["*"],  # allows OPTIONS, GET, POST, etc.
+    allow_methods=["*"], 
     allow_headers=["*"],
 )
 
