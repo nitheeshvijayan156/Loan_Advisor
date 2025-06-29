@@ -23,7 +23,7 @@ Setup the venv using the requirements.txt
 
  .env {
     
-    CLAUDE_API_KEY=your_anthropic_key_here
+    ANTHROPIC_API_KEY=your_anthropic_key_here
     DATABASE_URL=mysql+pymysql://user:password@localhost/loan_advisor_db
 
 
