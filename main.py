@@ -90,7 +90,7 @@ async def predict_lenders(user: UserInput):
 
         top_lenders = sorted(lender_scores, key=lambda x: x["match_score"], reverse=True)[:3]
 
-        # Generate natural response using LLM
+        
         llm_response = generate_llm_response(user.dict(), top_lenders)
         log_prediction(user.dict(), top_lenders, llm_response)
 
@@ -107,7 +107,7 @@ async def chat_route(query: ChatQuery):
         reply = chat_with_user(chat_memory)
         chat_memory.append({"role": "assistant", "content": reply})
 
-        # Check if Claude triggered a prediction
+        
         if "[READY_TO_PREDICT]" in reply:
             try:
                 match = re.search(r"\{(.|\s)*\}", reply)
