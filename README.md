@@ -1,4 +1,4 @@
- **Loan Advisor – Backend (FastAPI + ML + Claude)**
+ # Loan Advisor – Backend (FastAPI + ML + Claude)
 
 This is the backend system for the Loan Advisor application – a smart assistant that helps users find the best lender based on their profile. The backend leverages a machine learning model trained on synthetic lender eligibility data and generates human-readable explanations using Claude (Anthropic LLM).
 
@@ -23,7 +23,7 @@ Setup the venv using the requirements.txt
 
  .env {
     
-    CLAUDE_API_KEY=your_anthropic_key_here
+    ANTHROPIC_API_KEY=your_anthropic_key_here
     DATABASE_URL=mysql+pymysql://user:password@localhost/loan_advisor_db
 
 
