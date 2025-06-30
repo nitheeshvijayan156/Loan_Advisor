@@ -14,7 +14,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from llm import generate_llm_response  
 
 app = FastAPI()
-model = joblib.load(r"C:\Users\const\OneDrive\Documents\Sample\Git\Loan_Advisor\model build\loan_lender_model.pkl")
+model = joblib.load("loan_lender_model.pkl")
+
 
 app.add_middleware(
     CORSMiddleware,

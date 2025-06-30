@@ -22,7 +22,7 @@ You are a helpful loan advisor. A user has applied for a loan with these details
 The system matched these top lenders:
 {format_lenders(top_lenders)}
 
-Write a friendly, clear explanation to the user about why these lenders were selected.
+Write a friendly, clear explanation to the user about why these lenders were selected.Keep it short and to the point, focusing on the benefits of each lender for the user's situation. Avoid technical jargon and make it easy to understand.
 """
 
     message = client.messages.create(
